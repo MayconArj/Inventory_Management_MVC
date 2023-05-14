@@ -10,7 +10,7 @@ public class ConnectionFactory {
 	
 	public static Connection getConnection() throws Exception {
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			String url = "jdbc:mysql://localhost:3306/inventory";
 			String login = "root";
 			String pass = "";

@@ -3,7 +3,7 @@ CREATE DATABASE inventory;
 USE inventory;
 
 CREATE TABLE item(
-    id INT(5) PRIMARY KEY,
+    id INT(5) PRIMARY KEY AUTO_INCREMENT,
     item VARCHAR(25),
     amount INT(5),
     inside_date VARCHAR(10),
