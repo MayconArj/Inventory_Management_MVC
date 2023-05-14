@@ -1,0 +1,12 @@
+CREATE DATABASE inventory;
+
+USE inventory;
+
+CREATE TABLE item(
+    id INT(5) PRIMARY KEY,
+    item VARCHAR(25),
+    amount INT(5),
+    inside_date VARCHAR(10),
+    out_date VARCHAR(10),
+    obs VARCHAR(30)
+);

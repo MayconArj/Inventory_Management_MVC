@@ -12,11 +12,12 @@ import javax.swing.JSeparator;
 import java.awt.Button;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.TextArea;
 
 public class MainWindow extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textField;
+	private JTextField txtItemCode;
 
 	/**
 	 * Launch the application.
@@ -51,10 +52,10 @@ public class MainWindow extends JFrame {
 		lblNewLabel.setBounds(318, 10, 96, 23);
 		contentPane.add(lblNewLabel);
 		
-		textField = new JTextField();
-		textField.setBounds(424, 10, 157, 25);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		txtItemCode = new JTextField();
+		txtItemCode.setBounds(424, 10, 157, 25);
+		contentPane.add(txtItemCode);
+		txtItemCode.setColumns(10);
 		
 		JSeparator separator = new JSeparator();
 		separator.setBounds(10, 43, 864, 23);
@@ -64,13 +65,13 @@ public class MainWindow extends JFrame {
 		separator_1.setBounds(10, 316, 864, 23);
 		contentPane.add(separator_1);
 		
-		Button button = new Button("New button");
-		button.addActionListener(new ActionListener() {
+		Button txtSearch = new Button("New button");
+		txtSearch.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		button.setBounds(30, 328, 100, 100);
-		contentPane.add(button);
+		txtSearch.setBounds(30, 328, 100, 100);
+		contentPane.add(txtSearch);
 		
 		Button button_1 = new Button("New button");
 		button_1.setBounds(500, 328, 100, 100);
@@ -83,5 +84,9 @@ public class MainWindow extends JFrame {
 		Button button_3 = new Button("New button");
 		button_3.setBounds(746, 328, 100, 100);
 		contentPane.add(button_3);
+		
+		TextArea txtTextArea = new TextArea();
+		txtTextArea.setBounds(10, 60, 864, 236);
+		contentPane.add(txtTextArea);
 	}
 }
